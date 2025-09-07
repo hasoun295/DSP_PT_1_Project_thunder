@@ -52,7 +52,7 @@ def add_weather():
         try:
             data = read_csv("Bahrain Weather.csv")
             print(Fore.CYAN + "Please input the date in mm-dd-yyyy format:" + Style.RESET_ALL)
-            new_date= input()
+            new_date = input()
             if new_date.lower() == "exit":
                 return "Exited"
             formatted_date= datetime.strptime(new_date, "%m-%d-%Y")
@@ -63,7 +63,7 @@ def add_weather():
             print(Fore.RED + "Invalid date. Use MM-DD-YYYY (e.g., 07-20-2024) and try again.")   
         except:
             print(Fore.RED + "This record already exists in the system.") 
-
+        break
     # Add temperature
     while True:
         try:
@@ -486,7 +486,7 @@ def view_all():
     Display all data
     """
     try:
-        data = read_csv("BahrainWeather.csv") #Leave it like this we want to show the error
+        data = read_csv("Bahrain Weather.csv") #Leave it like this we want to show the error
     except FileNotFoundError:
         value = "End"
         error = f"{Fore.RED}System Issue: The file Bahrain Weather.csv does not exist. Please contact the backend developer for assistance."
@@ -667,7 +667,7 @@ def functions_help():
 2. View weather statistics
     - Enter a date range to receive the minimum, maximum, and average temperature.
     - View a graph displaying the temperature across the selected date range.
-    - View a breaking info across the data.
+    - View record breaking info across the data.
 3. Search Data.
     1. Search observations by date
         - Enter a specific date to see detailed information for that day in a table view.
