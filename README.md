@@ -51,8 +51,7 @@ This project was built as part of the Python Fundamentals Project, focusing on c
 - **collections.Counter** → for identifying the most common weather conditions
 
 
-## Authors
-
+## Creators:
 - #### Hasan Abbas:
     + [@GitHub](https://github.com/hasoun295)
     + [@LinkedIn](https://www.linkedin.com/in/hasanabbas98/)
